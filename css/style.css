@@ -6,6 +6,44 @@
   box-sizing: border-box;
 }
 
+:root {
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+}
+
 body {
   font-family: "Public Sans", sans-serif;
+}
+
+.nav-link {
+  color: rgb(100, 100, 100);
+  border-bottom: 5px solid transparent;
+}
+.nav-link:hover {
+  color: black;
+  border-bottom: 5px solid var(--lime-green);
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.button {
+  background-image: linear-gradient(
+    to right,
+    var(--lime-green),
+    var(--grayish-blue),
+    var(--bright-cyan)
+  );
+  padding: 0.6rem 2rem;
+  border-radius: 100px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    transform: translateY(2.3rem);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+  }
 }
