@@ -26,6 +26,26 @@ body {
   background-size: contain; */
 }
 
+/* Body Background Image */
+.body-img {
+  position: absolute;
+  z-index: -1;
+  right: -580px;
+  top: -200px;
+}
+@media (max-width: 991px) {
+  .body-img {
+    right: -700px;
+    top: -300px;
+  }
+}
+@media (max-width: 767px) {
+  .body-img {
+    right: -780px;
+    top: -400px;
+  }
+}
+
 /* Navigation Bar */
 .navbar {
   z-index: 10;
@@ -64,6 +84,7 @@ body {
     transform: translateY(2.3rem);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     padding: 1rem 0;
+    background-color: white;
   }
 }
 
@@ -118,6 +139,7 @@ body {
   opacity: 0.6;
 }
 
+/* Articles Section */
 .articles-container {
   padding: 4rem 0;
 }
@@ -144,6 +166,7 @@ body {
   opacity: 0.8;
 }
 
+/* Footer Section */
 .footer {
   background-color: hsl(233, 26%, 24%);
 }
